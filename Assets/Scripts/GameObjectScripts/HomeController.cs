@@ -121,15 +121,15 @@ public class HomeController : MonoBehaviour
                                                         viga[4].transform.position.z);
                     
                     //Dibujar linea
-                    viga[0].AddComponent<LineRenderer>();
+                    viga[2].AddComponent<LineRenderer>();
                     List<Vector3> linePositions = new List<Vector3>();
-                    LineRenderer lineaCurva = viga[0].GetComponent<LineRenderer>();
+                    LineRenderer lineaCurva = viga[2].GetComponent<LineRenderer>();
 
-                    var punto1 = viga[0].transform.position;
+                    var punto1 = viga[2].transform.position;
                     var punto2 = viga[3].transform.position;
-                    var punto3 = viga[5].transform.position;
+                    var punto3 = viga[4].transform.position;
 
-                    punto1 = new Vector3(punto1.x,punto1.y - 0.1f ,punto1.z - 1 );
+                    punto1 = new Vector3(punto1.x - 1f,punto1.y - 0.1f ,punto1.z - 1 );
                     punto2 = new Vector3(punto2.x,punto2.y - 0.1f ,punto2.z - 1);
                     punto3 = new Vector3(punto3.x,punto3.y - 0.1f ,punto3.z - 1);
                     
